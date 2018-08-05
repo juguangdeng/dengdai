@@ -1,0 +1,253 @@
+ /*
+* @Author: anchen
+* @Date:   2018-06-09 18:23:06
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-06-18 18:53:55
+*/
+/*基本公共设置*/
+main {
+    display: block;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+/*主要内容*/
+main .mainvisual {
+    height: 1466px;
+    margin: 0 auto;
+    background: url(../images/bg_mainvisual_02.jpg) 50% no-repeat  #06030c;
+    position: relative;
+}
+/*宣传用语*/
+main .mainvisual .catchphrase {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+main .mainvisual .catchphrase img {
+    position: absolute;
+    top: 600px;
+    right: 105px;
+}
+/*日期*/
+main .mainvisual .date {
+    width: 100%;
+    margin: 0 auto;
+    padding: 112px 0 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background: linear-gradient(to bottom,transparent 0,black 90%);
+}
+/*新闻公告*/
+main .mainvisual .announce {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+main .mainvisual .announce .bnr-concert {
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+main .mainvisual .announce .bnr-blu-ray {
+    position: absolute;
+    top: 380px;
+    right: 0;
+}
+main .mainvisual .announce .bnr-concert a img {
+    transition: .3s;
+    box-shadow: 0 0 20px 3px rgba(255,255,255,.3);
+}
+main .mainvisual .announce .bnr-blu-ray a img {
+    transition: .3s;
+    box-shadow: 0 0 20px 3px rgba(255,255,255,.3);
+}
+main .mainvisual .announce a img:hover {
+    opacity: .8;
+}
+/*电影片段*/
+main .parts-movie {
+    width: 100%;
+    position: relative;
+}
+main .parts-movie .thumbnail a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+main .parts-movie .thumbnail a:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(84,32,102,.7);
+    z-index: 1;
+}
+main .parts-movie .thumbnail a .movie {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+main .parts-movie .thumbnail a .movie video {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+main .parts-movie .thumbnail a:after {
+    content: "";
+    width: 5%;
+    margin: 0 auto;
+    padding: 5% 0 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background: url(../images/btn_play.png) 0 0/contain no-repeat;
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*电影标题*/
+main .parts-movie h2 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    color: #fff;
+    z-index: 3;
+    font-family: PT Serif,serif;
+}
+main .parts-movie h2 span {
+    margin: 0 0 0 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: Hiragino Kaku Gothic Pro,Meiryo,Osaka,MS PGothic,sans-serif;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+main .parts-movie h2:before {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: #fff;
+    position: absolute;
+    top: -3.5px;
+    left: -30px;
+    transform: rotate(30deg);
+}
+/*新闻动态*/
+main .parts-news {
+    width: 100%;
+    padding: 60px 0 145px;
+    position: relative;
+    background: #f2ebf9;
+    display: inline-block;
+}
+/*新闻标题*/
+main .parts-news h2 {
+    margin: 0 0 50px 90px;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #2c0a36;
+    position: relative;
+    font-size: PT Serif,serif;
+}
+main .parts-news h2 span {
+    margin: 0 0 0 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: Hiragino Kaku Gothic Pro,Meiryo,Osaka,MS PGothic,sans-serif;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+main .parts-news h2:before {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: #2c0a36;
+    position: absolute;
+    top: -3.5px;
+    left: -30px;
+    transform: rotate(30deg);
+}
+/*新闻列表*/
+main .news-list {
+    width: 1200px;
+    margin: 0 auto;
+}
+main .news-list li {
+    width: 285px;
+    float: left;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    position: relative;
+}
+main .news-list li+li {
+    margin: 0 0 0 20px;
+}
+/*新闻内部设置*/
+main .news-list li a .thumbnail {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+main .news-list li a div {
+    padding: 21px 20px 20px;
+    background: #fff;
+    height:100px;
+}
+main .news-list li a div .date {
+    margin: 0 0 16px;
+    font-size: 12px;
+    color: #000;
+    font-family: PT Serif,serif;
+}
+main .news-list li a div .date span {
+    padding: 3px 5px;
+    background: #e4deeb;
+}
+main .news-list li a div .tit {
+    font-size: 14px;
+    line-height: 1.8571;
+    color: #000;
+}
+main .news-list li a .new {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*特效区域*/
+main .news-list li img {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+main .news-list li a img:hover {
+    transform: scale(1.05);
+}
